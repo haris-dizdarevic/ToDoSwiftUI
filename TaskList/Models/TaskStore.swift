@@ -1,5 +1,7 @@
-class TaskStore {
-    var tasks: [Task] = [
+import Combine
+
+class TaskStore: ObservableObject {
+    @Published var tasks: [Task] = [
         "Coda a SwiftUI app",
         "Book an escape room",
         "Walk the cat",
@@ -11,5 +13,4 @@ class TaskStore {
         "Play disc golf in every state",
         "100 movie reboot marathon"
     ].map { Task(name: $0) }
-
 }
