@@ -16,6 +16,14 @@
 		60A81ED524A4D64B00059234 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81ED424A4D64B00059234 /* Task.swift */; };
 		60A81ED824A4D6A300059234 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81ED724A4D6A300059234 /* TaskStore.swift */; };
 		60A81EDC24A4DF0F00059234 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81EDB24A4DF0F00059234 /* NewTaskView.swift */; };
+		60A81EDF24A4EED900059234 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81EDE24A4EED900059234 /* RowView.swift */; };
+		60A81EE124A4F17400059234 /* TaskEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81EE024A4F17400059234 /* TaskEditingView.swift */; };
+		60A81EE524A4F2FB00059234 /* IndexedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81EE324A4F2FB00059234 /* IndexedCollection.swift */; };
+		60A81EE624A4F2FB00059234 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81EE424A4F2FB00059234 /* ForEach.swift */; };
+		60A81EE824A4F60600059234 /* Task.Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81EE724A4F60600059234 /* Task.Priority.swift */; };
+		60A81EEA24A4F68900059234 /* TaskStore.PrioretizedTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81EE924A4F68900059234 /* TaskStore.PrioretizedTasks.swift */; };
+		60A81EEC24A4FA3200059234 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81EEB24A4FA3200059234 /* SectionView.swift */; };
+		60A81EEE24A5009800059234 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A81EED24A5009800059234 /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,14 @@
 		60A81ED424A4D64B00059234 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		60A81ED724A4D6A300059234 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		60A81EDB24A4DF0F00059234 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		60A81EDE24A4EED900059234 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		60A81EE024A4F17400059234 /* TaskEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditingView.swift; sourceTree = "<group>"; };
+		60A81EE324A4F2FB00059234 /* IndexedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexedCollection.swift; sourceTree = "<group>"; };
+		60A81EE424A4F2FB00059234 /* ForEach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
+		60A81EE724A4F60600059234 /* Task.Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.Priority.swift; sourceTree = "<group>"; };
+		60A81EE924A4F68900059234 /* TaskStore.PrioretizedTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.PrioretizedTasks.swift; sourceTree = "<group>"; };
+		60A81EEB24A4FA3200059234 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		60A81EED24A5009800059234 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +62,7 @@
 		60A81EB424A4CFB000059234 = {
 			isa = PBXGroup;
 			children = (
+				60A81EE224A4F2FB00059234 /* extension */,
 				60A81EBF24A4CFB000059234 /* TaskList */,
 				60A81EBE24A4CFB000059234 /* Products */,
 			);
@@ -86,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				60A81ED424A4D64B00059234 /* Task.swift */,
+				60A81EE724A4F60600059234 /* Task.Priority.swift */,
 				60A81ED724A4D6A300059234 /* TaskStore.swift */,
+				60A81EE924A4F68900059234 /* TaskStore.PrioretizedTasks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -95,9 +114,22 @@
 			isa = PBXGroup;
 			children = (
 				60A81EC424A4CFB000059234 /* ContentView.swift */,
+				60A81EEB24A4FA3200059234 /* SectionView.swift */,
 				60A81EDB24A4DF0F00059234 /* NewTaskView.swift */,
+				60A81EDE24A4EED900059234 /* RowView.swift */,
+				60A81EE024A4F17400059234 /* TaskEditingView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		60A81EE224A4F2FB00059234 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				60A81EE324A4F2FB00059234 /* IndexedCollection.swift */,
+				60A81EE424A4F2FB00059234 /* ForEach.swift */,
+				60A81EED24A5009800059234 /* Binding.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +203,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A81EEA24A4F68900059234 /* TaskStore.PrioretizedTasks.swift in Sources */,
 				60A81ED824A4D6A300059234 /* TaskStore.swift in Sources */,
 				60A81ED524A4D64B00059234 /* Task.swift in Sources */,
+				60A81EEE24A5009800059234 /* Binding.swift in Sources */,
+				60A81EE524A4F2FB00059234 /* IndexedCollection.swift in Sources */,
+				60A81EE124A4F17400059234 /* TaskEditingView.swift in Sources */,
+				60A81EDF24A4EED900059234 /* RowView.swift in Sources */,
 				60A81EDC24A4DF0F00059234 /* NewTaskView.swift in Sources */,
+				60A81EE824A4F60600059234 /* Task.Priority.swift in Sources */,
+				60A81EEC24A4FA3200059234 /* SectionView.swift in Sources */,
 				60A81EC124A4CFB000059234 /* AppDelegate.swift in Sources */,
 				60A81EC324A4CFB000059234 /* SceneDelegate.swift in Sources */,
+				60A81EE624A4F2FB00059234 /* ForEach.swift in Sources */,
 				60A81EC524A4CFB000059234 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
